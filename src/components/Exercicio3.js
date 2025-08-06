@@ -1,29 +1,42 @@
 import React, { useState } from "react";
 
+function ToggleOnOff() {
+    const [isOn, setIsOn] = useState(true);
 
-function ToggleOnOff({ perguntas }) {
-  const [ativa, setAtiva] = useState(null);
-  const [desativa, setDesativa] = useState(null);
+    const toggleButton = () => {
+        setIsOn(estado => !estado); //Verifica o estado atual do botão, e se for diferente ele faz a alteração deste estado (verifica se {useState(true)} ou {useState(false)})
+    };
 
-  const toggleAtiva = () => {
-    setAtiva(ativa === index ? null : index);
-  };
-
-  const toggleDesativa = (index) => {
-    setDesativa(desativa === index ? null : index);
-  };
-
-  return (
-    <div >
-      <button onClick={() => toggle(index)}>ON</button>
-          {ativa === index && (
-            <div>
-              <p>{item.resposta}</p>
-            </div>
-          )}
+    return (
+        <div>
+            <button onClick={toggleButton}>{isOn ? "On" : "Off"}</button>
         </div>
-      )
+    );
 }
 
 export default ToggleOnOff;
 
+// Versão inicial
+// import React, { useState } from "react";
+
+// function ToggleOnOff(){
+
+//     const[onOff, setOnOff] = useState(0);
+
+//     const buttonOn = () => {
+//         setOnOff(onOff + 1)
+//     }
+
+//     const buttonOff = () => {
+//         setOnOff(onOff - 1)
+//     }
+
+//     return(
+//         <div>
+//             <button onClick = {buttonOn}>On</button>
+//             <button onClick = {buttonOff}>Off</button>
+//         </div>
+//     )
+// }
+
+// export default ToggleOnOff;

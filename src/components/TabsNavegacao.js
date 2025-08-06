@@ -8,9 +8,9 @@ function TabsNavegacao({ abas }) {
     <div className="tabs-container">
       <div className="tabs">
         {abas.map((aba, i) => (
-          <button key={i}
-            className={`tab ${ativa === i ? "ativa" : ""}`}
-            onClick={() => setAtiva(i)}
+          <button key={i} 
+          className={`tab ${ativa === i ? "ativa" : ""}`} 
+          onClick={() => setAtiva(i)}
           >
             {aba.titulo}
           </button>

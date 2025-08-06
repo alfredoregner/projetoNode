@@ -10,8 +10,8 @@ function Curtir(){
 
     return (
         <div>
-            <button onClick = {incrementar}>Curtir</button>
-            <p>Curtidas: {contador}</p>
+            <button onClick = {incrementar}>❤</button>
+            <p>Curtidas ❤: {contador}</p>
         </div>
     );
 }

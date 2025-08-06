@@ -19,6 +19,9 @@ import TabsNavegacao from './components/TabsNavegacao';
 import GaleriaImagens from './components/GaleriaImagens';
 import CardPerfil from './components/Exercicio1';
 import Curtir from './components/Exercicio2';
+import ToggleOnOff from './components/Exercicio3';
+import InputControlado from './components/Exercicio4';
+import ListaFrutas from './components/Exercicio5';
 
 
 function App() {
@@ -54,13 +57,16 @@ function App() {
 
       <h1>Exercícios</h1>
       <h2>1. Cartão de Perfil com Curtidas</h2>
-      <CardPerfil nome = {"Alfredo Regner"} imagem = {"https://pm1.aminoapps.com/6753/471ba73dbe9f37934069672570d6391350520327v2_hq.jpg"} descricao = {"Não sei o que colocar de descrição"} />
+      <CardPerfil nome = {"Yugi Muto"} imagem = {"https://pm1.aminoapps.com/6753/471ba73dbe9f37934069672570d6391350520327v2_hq.jpg"} descricao = {"O REI DOS JOGOS"} />
       <Curtir />
       <h2>3. Componente de Toggle</h2>
+      <ToggleOnOff />
 
       <h2>4. Input Controlado</h2>
+      <InputControlado />
 
       <h2>5. Lista Dinâmica</h2>
+      <ListaFrutas />
 
     </div>
   );
